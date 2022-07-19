@@ -8,13 +8,13 @@
 - in the `client` directory, add `.env` file with following contents
 
 ```
-    REACT_APP_BACKEND_URL=<BACKEND_URL>
+    REACT_APP_BACKEND_URL=http://localhost:5500
 ```
 
 - in the root directory, add a `.env` with following contents
 
 ```
-    PORT=<BACKEND_PORT_NUMBER>
+    PORT=5500
 ```
 - in the root directory, `npm i`
 - in the root directory, `npm run dev`
