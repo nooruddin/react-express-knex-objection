@@ -1,0 +1,21 @@
+{
+  "name": "react-express-full-demo",
+  "version": "1.0.0",
+  "description": "full stack demo using react & express",
+  "scripts": {
+    "postinstall": "(cd client && npm install); (cd server && npm install && npm run migrate:down && npm run migrate && npm run seed)",
+    "client": "npm start --prefix ./client",
+    "server": "nodemon ./server/index.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "react",
+    "express",
+    "full-stack"
+  ],
+  "author": "Noor",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.2"
+  }
+}

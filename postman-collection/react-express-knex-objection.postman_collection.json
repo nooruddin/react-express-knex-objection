@@ -1,0 +1,274 @@
+{
+	"info": {
+		"_postman_id": "ced5d525-af91-4d55-8007-4cba92d96d0a",
+		"name": "React Express Knex Objection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all Students",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "Get all Students"
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Student",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/students/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"students",
+						"7"
+					]
+				},
+				"description": "Get One Student"
+			},
+			"response": []
+		},
+		{
+			"name": "Add a Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"John\",\n    \"email\": \"john@gmail.com\",\n    \"course\": \"Web Dev\",\n    \"educator_id\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "Add a student"
+			},
+			"response": []
+		},
+		{
+			"name": "Update a Student",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joe Di\",\n    \"course\": \"Web Development\",\n    \"educator_id\": \"1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/students/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"students",
+						"7"
+					]
+				},
+				"description": "update single student"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/api/students/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"students",
+						"7"
+					]
+				},
+				"description": "delete a student by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Educators",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/api/educators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"educators"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get One Educator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/api/educators/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"educators",
+						"1"
+					]
+				},
+				"description": "get one educator by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Create an Educator",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joe Di\",\n    \"email\": \"joe.di@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/educators",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"educators"
+					]
+				},
+				"description": "create a new educator"
+			},
+			"response": []
+		},
+		{
+			"name": "Update an Educator",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Joe Di Trollio\",\n    \"position\": \"Senior Educator\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5500/api/educators/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"educators",
+						"5"
+					]
+				},
+				"description": "update an educator by id"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an Educator",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5500/api/educators/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5500",
+					"path": [
+						"api",
+						"educators",
+						"5"
+					]
+				},
+				"description": "delete an educator by id"
+			},
+			"response": []
+		}
+	]
+}

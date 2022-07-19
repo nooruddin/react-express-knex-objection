@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Full ExpressJS Server Setup using Routing, Middlewares, etc.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "migrate": "knex migrate:latest",
+    "migrate:down": "knex migrate:down",
+    "migrate:rollback": "knex migrate:rollback",
+    "seed": "knex seed:run"
+  },
+  "keywords": [
+    "express",
+    "routes",
+    "servers",
+    "middlewares",
+    "nodejs"
+  ],
+  "author": "Noor",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "knex": "^2.1.0",
+    "moment": "^2.29.4",
+    "mysql": "^2.18.1",
+    "objection": "^3.0.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
