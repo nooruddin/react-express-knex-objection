@@ -4,6 +4,7 @@ class Educator extends Model {
   static tableName = "educators";
 
   static get relationMappings() {
+    // requiring here to avoid circular dependency
     const Student = require("./Student");
     return {
       students: {
