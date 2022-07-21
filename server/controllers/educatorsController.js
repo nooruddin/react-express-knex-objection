@@ -1,8 +1,8 @@
 const Educator = require("../models/Educator");
 
 const findAll = async (_req, res) => {
-  const students = await Educator.query();
-  res.status(200).json(students);
+  const educators = await Educator.query();
+  res.status(200).json(educators);
 };
 
 const findOne = async (req, res) => {
@@ -30,12 +30,10 @@ const remove = async (req, res) => {
   const totalEducatorsDeleted = await Educator.query().deleteById(
     req.params.id
   );
-  res
-    .status(200)
-    .json({
-      totalEducatorsDeleted: totalEducatorsDeleted,
-      deletedEducatorId: req.params.id,
-    });
+  res.status(200).json({
+    totalEducatorsDeleted: totalEducatorsDeleted,
+    deletedEducatorId: req.params.id,
+  });
 };
 
 module.exports = {
